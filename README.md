@@ -5,10 +5,14 @@ Using R Studio
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-When applying the formula to get the relationship between one coefficient (mpg) or variable versus the others, R displays the follow values: 
+When applying the formula to get the relationship between one coefficient (mpg) or variable versus the others, R displays the follow values:
+
 Coefficients:
+
      (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance  
+     
       -1.040e+02         6.267e+00         1.245e-03         6.877e-02         3.546e+00  
+             
              AWD  
       -3.411e+00  
 
