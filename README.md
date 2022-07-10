@@ -16,39 +16,9 @@ We are comparing the mpg coefficients with the others, then we can see there is 
 
 * Is the slope of the linear model considered to be zero? Why or why not?
 
-It could be zero i the case the coefficients increse dramatically, but for these example I think it wont get the zero value.
+It could be zero in the case the coefficients increse dramatically, but for these example I think it wont get the zero value.
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-I think the prediction has a consider difference while comparing differents coefficients, the calculation after shows how values vaary if we take first mpg coefficients versus the others coefficients and then we compare vehicle_lenght versus the others, differences area consider, however in the  graph we can consider a weak or moderate strength f correlation.
 
-lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
-    ground_clearance + AWD, data = mecha_car)
+I think the prediction has a consider difference while comparing differents coefficients, the calculation below, shows how values vary if we take first mpg coefficients versus the others coefficients and then we compare vehicle_lenght versus the others, differences are consider, besides in the  images below, there are two examples, comparing mpg vs vehicle_lenght and mpg vs spoiler_angle the graphs show a weak or moderate strength of correlation.
 
-Residuals:
-     Min       1Q   Median       3Q      Max 
--19.4701  -4.4994  -0.0692   5.4433  18.584
-Coefficients:
-                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      -1.040e+02  1.585e+01  -6.559 5.08e-08 ***
-vehicle_length    6.267e+00  6.553e-01   9.563 2.60e-12 ***
-vehicle_weight    1.245e-03  6.890e-04   1.807   0.0776 .  
-spoiler_angle     6.877e-02  6.653e-02   1.034   0.3069    
-ground_clearance  3.546e+00  5.412e-01   6.551 5.21e-08 ***
-AWD              -3.411e+00  2.535e+00  -1.346   0.1852    
----
-
-lm(formula = vehicle_length ~ vehicle_weight + spoiler_angle + 
-    ground_clearance + AWD + mpg, data = mecha_car)
-
-Residuals:
-     Min       1Q   Median       3Q      Max 
--1.75545 -0.85291 -0.09242  0.47948  2.72615 
-
-Coefficients:
-                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)       1.742e+01  1.284e+00  13.566  < 2e-16 ***
-vehicle_weight   -1.700e-04  9.005e-05  -1.888   0.0656 .  
-spoiler_angle    -9.066e-03  8.721e-03  -1.040   0.3042    
-ground_clearance -4.638e-01  7.112e-02  -6.521 5.77e-08 ***
-AWD               4.063e-01  3.335e-01   1.218   0.2296    
-mpg               1.077e-01  1.127e-02   9.563 2.60e-12 ***
