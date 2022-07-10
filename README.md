@@ -24,5 +24,12 @@ It could be zero in the case the coefficients increse dramatically, but for thes
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-I think the prediction has a consider difference while comparing differents coefficients, the calculation below, shows how values vary if we take first mpg coefficients versus the others coefficients and then we compare vehicle_lenght versus the others, differences are consider, besides in the  images below, there are two examples, comparing mpg vs vehicle_lenght and mpg vs spoiler_angle the graphs show a weak or moderate strength of correlation.
+I think the prediction has a consider difference while comparing differents coefficients, the calculation below, shows how values vary if we take first mpg coefficients versus the others coefficients and then we take vehicle_lenght versus the others, differences are consider, besides in the  images below, there are two examples, comparing mpg vs vehicle_lenght and mpg vs spoiler_angle the graphs show a weak or moderate strength of correlation, so in general correlation can be consider weak or moderated due some values have show correlation and others don't show it.
+
+![mpg](/Resources/mpg.png)
+![vehicle_legth](/Resources/vehicle_length.png)
+![vehicle_length_graph](/Resources/vehicle_length_graph.png)
+![spoiler_angle](/Resources/spoiler_angle.png)
+
+
 
