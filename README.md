@@ -4,7 +4,7 @@ Using R Studio
 ## Linear Regression to Predict MPG
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-* 
+
 When applying the formula to get the relationship between one coefficient (mpg) or variable versus the others, R displays the follow values: 
 Coefficients:
      (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance  
