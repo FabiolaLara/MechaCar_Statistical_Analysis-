@@ -49,4 +49,10 @@ To start with, the total summary was obtained and applying the t.test() function
 
 ![total_summary](/Resources/total_summary.png)
 
+Secondly, we retrieved three subset of data, the first one is for all the lot 1, the secondth is or lot2 and the thirdth is for lot 3, with these subsets, we are comparing also how statistically similar they are versus the mean of 1500, which was propose by the challenge.
+
+We can see that for lot1 the mean shows it is the same, althougt there is a legend that say it is no equal due the mean has been rounded, however we can see the real value for lot 1 is 1499.423, nearly 1500, we can conclud that the p-value indicates more than 60% of efectiveness, saying that these values are statistically similar.
+![lot1](/Resources/lot1.png)
+
+
 
