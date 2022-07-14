@@ -40,6 +40,7 @@ Let see that the values for the Median in Lot1 and Lot2 are: 1500 in both, and t
 ![total_summary](/Resources/total_summary.png)
 ![lot_summary](/Resources/lot_summary.png)
 
+## T-Tests on Suspension Coils
 
-
+In this analysis, we had to apply the t.test() function to compare values from the PSI column versus the mean of 1500 suggested in the Challenge, applying this function will retrieve information of comparision, saying if there is no statistical difference between the observed sample mean and its presumed population mean, or if there is a statistical difference between the observed sample mean and its presumed population mean.
 
