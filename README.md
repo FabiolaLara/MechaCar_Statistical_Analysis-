@@ -62,6 +62,7 @@ For lot 2 the p-values shows more than the 60% of effectiveness, we know than fo
 The las subset, lot3 a slighly difference between the compared values, the p-value shows less than 40% of effecriveness, saying that the values have a weak similarity statistically. We can explain this because there is a consider variation in the PSI values, we can see that there are values under 1460, creating this weak or moderate similarity between the means.
 
 ![lot3](/Resources/lot3.png)
+<img width="250" alt="lot3_values" src="https://user-images.githubusercontent.com/101358301/179012463-fb049880-c8be-4605-9a9d-94ddca0f0c1d.png">
 
 
 
