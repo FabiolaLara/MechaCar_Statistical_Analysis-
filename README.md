@@ -38,7 +38,6 @@ The design specifications for the MechaCar suspension coils dictate that the var
 Let see that the values for the Median in Lot1 and Lot2 are: 1500 in both, and the variance is 0.9795918 and 7.4693878 corresponding to each one, we can say that for Lot1 and Lot2 the variance is not exceding the specification, however in Lot3 the variance is 170.2861224, there is a highly variance respecting the Median value, overpassing the specification given, we can say that for Lot3 the PSI values were reduced considerably, then the variance was going to be reduced sharply.
 
 ![lot_summary](/Resources/lot_summary.png)
-![total_summary](/Resources/total_summary.png)
 
 
 ## T-Tests on Suspension Coils
@@ -48,6 +47,6 @@ In this analysis, we had to apply the t.test() function to compare values from t
 
 To start with, the total summary was obtained and applying the t.test() function we compare the PSI value, versus the mean of 1500, the next image shows the result, where we can see that the p-value = 0.06028 which means there is above our significant value of 50%, we have 60% which is enought to state that the two means are statistically similar.
 
-![lot_summary](/Resources/lot_summary2.png)
+![total_summary](/Resources/total_summary.png)
 
 
