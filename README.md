@@ -80,9 +80,14 @@ But if our competitors have different metrics such as: cost, hose powers, mainte
 Let's answer some questions that could take us deeply if we want to compare metrics about competitors vs the MechaCar data set.
 
 + **What metric or metrics are you going to test?**
-Altought there a re many metrics that can be taken in analysing cars, the metrics thougth and that I would consider are: cost, fuel efficiency, HP, maintenance cost and safety rating. 
+Altought there are many metrics that can be taken in analysing cars, the metrics thougth and that I would consider are: cost, fuel efficiency, HP, maintenance cost and safety rating. 
 
 + **What is the null hypothesis or alternative hypothesis?**
-+ 
+The null hypothesis could be that choosing these metrics you can say a car have all the neccesary or specific characteritcs to buy a car. 
+The alternative hypothesis can be that these metrics are not all the important metrics for clients in choosing a car.
+
 + **What statistical test would you use to test the hypothesis? And why?**
++ 
+I would test these metrics using the t.test() function, because I can compare all the metrics and as is stablished that the most test you make, the most correct or valid comparision you can get to finally determine if the hypohesis is valid, also we can get the p-value which will tell us how far or near we are of the true using these metrics, so at the end we can have a bigger analysis and we could make or say these metrics are good or if our hypothesis is far comparing these metrics so we could research more metrics.
+
 + **What data is needed to run the statistical test?**
