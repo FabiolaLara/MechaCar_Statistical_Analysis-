@@ -91,3 +91,71 @@ mpg               1.077e-01  1.127e-02   9.563 2.60e-12 ***
 Residual standard error: 1.15 on 44 degrees of freedom
 Multiple R-squared:  0.7119,	Adjusted R-squared:  0.6791 
 F-statistic: 21.74 on 5 and 44 DF,  p-value: 6.712e-11
+
+> lot_summary <- susp_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI),.groups = 'keep') # create lot summary
+
+> total_summary <- susp_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI),.groups = 'keep') #create summary table
+
+# Deliverable3
+> t.test((susp_coil$PSI),mu=(1500)) #compare susp_coil vs population mean of 1500
+
+One Sample t-test
+
+data:  (susp_coil$PSI)
+t = -1.8931, df = 149, p-value = 0.06028
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+  1497.507 1500.053
+sample estimates:
+  mean of x 
+1498.78 
+
+
+# Getting the subsets to compare each lot vs population mean of 1500
+
+> susp_coil_lot1 <- susp_coil[susp_coil$Manufacturing_Lot == 'Lot1',]
+
+> susp_coil_lot2 <- susp_coil[susp_coil$Manufacturing_Lot == 'Lot2',]
+
+> susp_coil_lot3 <- susp_coil[susp_coil$Manufacturing_Lot == 'Lot3',]
+
+# Applying the t.test() function for each lot vs the population mean of 1500
+> t.test((susp_coil_lot1$PSI),mu=(1500)) #compare susp_coil_lot3 vs susp_coil (the entire dataset)
+
+One Sample t-test
+
+data:  (susp_coil_lot1$PSI)
+t = 0, df = 49, p-value = 1
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+  1499.719 1500.281
+sample estimates:
+  mean of x 
+1500 
+
+> t.test((susp_coil_lot2$PSI),mu=(1500)) #compare susp_coil_lot3 vs susp_coil (the entire dataset)
+
+One Sample t-test
+
+data:  (susp_coil_lot2$PSI)
+t = 0.51745, df = 49, p-value = 0.6072
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+  1499.423 1500.977
+sample estimates:
+  mean of x 
+1500.2 
+
+> t.test((susp_coil_lot3$PSI),mu=(1500)) #compare susp_coil_lot3 vs susp_coil (the entire dataset)
+
+One Sample t-test
+
+data:  (susp_coil_lot3$PSI)
+t = -2.0916, df = 49, p-value = 0.04168
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+  1492.431 1499.849
+sample estimates:
+  mean of x 
+1496.14 
+
