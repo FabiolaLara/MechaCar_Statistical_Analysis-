@@ -74,7 +74,16 @@ This image show some of the values for lot 3, we can see it contains a considera
 
 ## Study Design: MechaCar vs Competition
 
+The MechaCar data set, shows 6 metrics which were used to make the previous analysis, however we can see that these values are very specific, they are considering the lenght, weight, mpg, spoiler angle, ground clearance  and the mpg values. We can learn in the intenet tha a reasonable mpg has to be less than 60, the MechaCar data set shows that there are only 8 cars with a mpg higher than 60, so we could say that the cars in this data set are good vehicles to compare with the Competition if the mpg metric is consider.
+
+But if our competitors have different metrics such as: cost, hose powers, maintenance cost, or safety rating, our data ser cna´t say so much. According with the internet, 
+
+
+
+
 + **What metric or metrics are you going to test?**
+
+The metrics thougth and that will be consider are: cost, fuel efficiency, HP, maintenance cost and safety rating
 + **What is the null hypothesis or alternative hypothesis?**
 + **What statistical test would you use to test the hypothesis? And why?**
 + **What data is needed to run the statistical test?**
