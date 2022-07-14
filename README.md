@@ -7,6 +7,8 @@ Using R Studio
 
 When applying the formula to get the relationship between one coefficient (mpg) or variable versus the others, R displays the follow values:
 
+**Multiple linear regression formula: lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mecha_car)
+
 Coefficients:
 
      (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance  
@@ -16,7 +18,7 @@ Coefficients:
              AWD  
       -3.411e+00  
 
-We are comparing the mpg coefficients with the others, then we can see there is a slightly correlation between them, analyzing first vehicle_length and spoiler_angle, we can say there is a moderate correlation cause their values are nearly 7, and for values over 7 the sthenght of correlation is consider strong, however the coefficient groud_clearance is slighly over 3, so it is consider a weak correlation, for vehicle_weigth the correlation can be consider none, and for AWG coefficient altought it is a negative value the correlation is weak but it has more than 3 to be consider. Respecting the Intercept value we can see that it is negative, showing that the slope is decrecient, it means that when the x values increase, the y values decrease, for these analysis it could sound right, becasue the mpg values determine how fast a vehicle can be, in less time, while getting a mile of distance, so if the others coefficients like weigth, length, spoiler, ground clearance and AWG increase, In my opinion, they are determinant variables to make a car faster or less fats. Then if one these variables increase, it can be a fact that the mpg is going to decrease.
+We are comparing the mpg coefficients with the others, then we can see there is a sligh correlation between them, analyzing first vehicle_length and spoiler_angle, we can say there is a moderate correlation cause their values are nearly 7, and for values over 7 the sthenght of correlation is consider strong, however the coefficient groud_clearance is slighly over 3, so it is consider a weak correlation, for vehicle_weigth the correlation can be consider none, and for AWG coefficient altought it is a negative value the correlation is weak but it has more than 3 to be consider. Respecting the Intercept value we can see that it is negative, showing that the slope is decrecient, it means that when the x values increase, the y values decreases, for these analysis the correlation could sound coherent, becasue the mpg values determine how fast a vehicle can be, in less time, while getting a mile of distance, so if the others coefficients like weigth, length, spoiler, ground clearance and AWG increase, In my opinion, they are determinant variables to make a car faster or less fats. Then if one these variables increase, it can be a fact that the mpg is going to decrease.
 
 * Is the slope of the linear model considered to be zero? Why or why not?
 
@@ -35,7 +37,7 @@ I think the prediction has a consider difference while comparing differents coef
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-Let see that the values for the Median in Lot1 and Lot2 are: 1500 in both, and the variance is 0.9795918 and 7.4693878 corresponding to each one, we can say that for Lot1 and Lot2 the variance is not exceding the specification, however in Lot3 the variance is 170.2861224, there is a highly variance respecting the Median value, overpassing the specification given, we can say that for Lot3 the PSI values were reduced considerably, then the variance was going to be reduced sharply.
+Let see that the values for the Median in Lot1 and Lot2 are: 1500 in both, and the variance is 0.9795918 and 7.4693878 corresponding to each one, we can say that for Lot1 and Lot2 the variance is not exceding the specification, however in Lot3 the variance is 170.2861224, there is a high variance respecting the Median value, overpassing the specification given, we can say that for Lot3 the PSI values were reduced considerably, then the variance was going to be reduced sharply.
 
 ![lot_summary](/Resources/lot_summary.png)
 
@@ -45,7 +47,7 @@ Let see that the values for the Median in Lot1 and Lot2 are: 1500 in both, and t
 In this analysis, we had to apply the t.test() function to compare values from the PSI column versus the mean of 1500 suggested in the Challenge, applying this function will retrieve information of comparision, saying if there is no statistical difference between the observed sample mean and its presumed population mean, or if there is a statistical difference between the observed sample mean and its presumed population mean.
 
 
-To start with, the total summary was obtained and applying the t.test() function we compare the PSI value, versus the mean of 1500, the next image shows the result, where we can see that the p-value = 0.06028 which means there is above our significant value of 50%, we have 60% which is enought to state that the two means are statistically similar.
+To start with, the total summary was obtained, then applying the t.test() function we compare the PSI value, versus the mean of 1500, the next image shows the result, where we can see that the p-value = 0.06028 which means there is above our significant value of 50%, we have 60% which is enought to state that the two means are statistically similar.
 
 ![total_summary](/Resources/total_summary.png)
 
@@ -59,7 +61,7 @@ For lot 2 the p-values shows more than the 60% of effectiveness, we know than fo
 
 ![lot2](/Resources/lot2.png)
 
-The las subset, lot3 a slighly difference between the compared values, the p-value shows less than 40% of effecriveness, saying that the values have a weak similarity statistically. We can explain this because there is a consider variation in the PSI values, we can see that there are values under 1460, creating this weak or moderate similarity between the means.
+The last subset, lot3 shows a slight difference between the compared values, the p-value shows less than 40% of effectiveness, saying that the values have a weak similarity statistically. We can explain this because there is a consider variation in the PSI values, we can see that there are values under 1460, creating this weak or moderate similarity between the means.
 
 ![lot3](/Resources/lot3.png)
 
