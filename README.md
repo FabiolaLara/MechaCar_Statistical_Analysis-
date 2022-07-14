@@ -44,3 +44,6 @@ Let see that the values for the Median in Lot1 and Lot2 are: 1500 in both, and t
 
 In this analysis, we had to apply the t.test() function to compare values from the PSI column versus the mean of 1500 suggested in the Challenge, applying this function will retrieve information of comparision, saying if there is no statistical difference between the observed sample mean and its presumed population mean, or if there is a statistical difference between the observed sample mean and its presumed population mean.
 
+To start with, the total summary was obtained and applying the t.test() function we compare the PSI value, versus the mean of 1500, the next image shows the result, where we can see that the p-value = 0.06028 which means there is above our significant value of 50%, we have 60% which is enought to state that the two means are statistically similar.
+
+
