@@ -80,7 +80,7 @@ But if our competitors have different metrics such as: cost, hose powers, mainte
 Let's answer some questions that could take us deeply if we want to compare metrics about competitors vs the MechaCar data set.
 
 + **What metric or metrics are you going to test?**
-The metrics thougth and that will be consider are: cost, fuel efficiency, HP, maintenance cost and safety rating
+Altought there a re many metrics that can be taken in analysing cars, the metrics thougth and that I would consider are: cost, fuel efficiency, HP, maintenance cost and safety rating. 
 
 + **What is the null hypothesis or alternative hypothesis?**
 + 
