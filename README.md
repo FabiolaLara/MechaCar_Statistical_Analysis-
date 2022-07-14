@@ -51,8 +51,17 @@ To start with, the total summary was obtained and applying the t.test() function
 
 Secondly, we retrieved three subset of data, the first one is for all the lot 1, the secondth is or lot2 and the thirdth is for lot 3, with these subsets, we are comparing also how statistically similar they are versus the mean of 1500, which was propose by the challenge.
 
-We can see that for lot1 the mean shows it is the same, althougt there is a legend that say it is no equal due the mean has been rounded, however we can see the real value for lot 1 is 1499.423, nearly 1500, we can conclud that the p-value indicates more than 60% of efectiveness, saying that these values are statistically similar.
+We can see that for lot1 the mean shows it is the same, althougt there is a legend that say it is no equal, this is because the mean has been rounded, however we can see the real value for lot 1 is 1499.423, nearly 1500, we can conclude that the p-value indicates the value is eqaul to 1, when it happens, our compared values are very similar, statistically.
+
 ![lot1](/Resources/lot1.png)
+
+For lot 2 the p-values shows more than the 60% of effectiveness, we know than for a value above 50% it is consider efective.
+
+![lot2](/Resources/lot2.png)
+
+The las subset, lot3 a slighly difference between the compared values, the p-value shows less than 40% of effecriveness, saying that the values have a weak similarity statistically. We can explain this because there is a consider variation in the PSI values, we can see that there are values under 1460, creating this weak or moderate similarity between the means.
+
+![lot3](/Resources/lot3.png)
 
 
 
